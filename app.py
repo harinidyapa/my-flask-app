@@ -6,9 +6,9 @@ import os
 
 app = Flask(__name__)
 
-GOOGLE_API_KEY = "AIzaSyBqeamC8e5PbDWbT2PktANMoseJcaC_Lig"
+GOOGLE_API_KEY = "AIzaSyBbB5icHsqDnnG_pSELwIubPRXsXKJQATY"
 genai.configure(api_key=GOOGLE_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 @app.route("/", methods=["GET", "POST"])
 def index():
